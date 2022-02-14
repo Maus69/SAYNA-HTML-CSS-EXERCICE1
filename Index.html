@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Coloration des hyperliens en blanc */
+        a{
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        /* Barre de menu */
+        .grid-container{
+            display: grid;
+            grid-template-columns: 15% 50% auto auto auto;
+            background-color: #C55394;
+        }
+
+        /* Coloration de CONCEPT, OUR UNICORNS et FIND US en #EB43A3 au survol de la souris */
+        .grid-item:hover{
+            background-color: #EB43A3;
+        }
+
+        /* A propos de MyUnicorn */
+        .item1{
+            font-family: 'Courgette', cursive;
+            text-align: center;
+        }
+
+        /* A propos de CONCEPT, OUR UNICORNS et FIND US */
+        #text{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            transition-duration: 0.35s;
+        }
+
+        /* Image de fond du body */
+        body{
+            background-image: url("background.png");
+        }
+
+        /* One day et son image de fond */
+        .oneDay{
+            display: grid;
+            justify-content: center;
+            background-image: url("rainbow.png");
+            background-repeat: no-repeat;
+            background-position: center 10%;
+            font-family: 'Courgette', cursive;
+            color: #C55394;
+            padding: 40px;
+        }
+
+        /* Tableau pour tous les autres contenus */
+        .grid-container2{
+            display: grid;
+            grid-template-columns: 15% auto 15%;
+        }
+
+        /* Ombrage du colonne du milieu */
+        .grid-item2{
+            
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        /* A propos de tous les h2 */
+        h2{
+            font-family: 'Courgette', cursive;
+            color: #EB43A3;
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+
+        /* A propos de tous les p */
+        p{
+            font-family: Arial, sans-serif;
+            
+            color: #333;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /* Responsive Image Gallery (Debut) */
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+        }
+
+        @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive Image Gallery (Fin) */
+
+        /* Tableau pour la carte et l'email */
+        .grid-container3{
+            display: grid;
+            grid-template-columns: 550px auto;
+        }
+      
+        /* A propos de tous les h3 */
+        h3{
+            font-family: 'Courgette', cursive;
+            color: #EB43A3;
+        }
+
+    </style>
+
+    <!--Import du Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1"><h2><a href="Test.html">MyUnicorn</a></h2></div>
+        <div></div>
+        <!--Ancrage de CONCEPT, OUR UNICORNS et FIND US-->
+        <div class="grid-item" id="text"><a href="#Concept">CONCEPT</a></div>
+        <div class="grid-item" id="text"><a href="#Our unicorns">OUR UNICORNS</a></div>
+        <div class="grid-item" id="text"><a href="#Find us">FIND US</a></div>
+    </div>>
+
+    <div class="oneDay"><h1>One day, one unicorn</h1></div>
+
+    <div class="grid-container2">
+        <div></div>
+        <div class="grid-item2">
+            <br><br><br>
+            <div><h2 id="Concept"><i class="far fa-star"></i> Concept</h2></div> <!--Utilisation du Font Awesome far fa-star--> 
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
+                <p>Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+                <!--Lorem ipsum-->
+            </div>
+            <br><br>
+            <div><h2 id="Our unicorns"><i class="far fa-star"></i> Our Unicorns</h2></div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="C:\Users\Tiona\Pictures\Exercice\photo1.jpg">
+                    <img src="C:\Users\Tiona\Pictures\Exercice\photo1.jpg" alt="Lulu Confetty" width="600" height="400">
+                    </a>
+                    <div class="desc">Lulu Confetty</div>
+                    <!--Integration de l'image C:\Users\Tiona\Pictures\Exercice\photo1.jpg au gallerie-->
+                </div>
+            </div>
+              
+              
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="C:\Users\Tiona\Pictures\Exercice\photo2.jpg">
+                    <img src="C:\Users\Tiona\Pictures\Exercice\photo2.jpg" alt="Lapillon Magik" width="600" height="400">
+                    </a>
+                    <div class="desc">Lapillon Magik</div>
+                </div>
+            </div>
+              
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="C:\Users\Tiona\Pictures\Exercice\photo3.jpg">
+                    <img src="C:\Users\Tiona\Pictures\Exercice\photo3.jpg" alt="El Ninjacorn" width="600" height="400">
+                    </a>
+                    <div class="desc">El Ninjacorn</div>
+                </div>
+            </div>
+              
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="C:\Users\Tiona\Pictures\Exercice\photo4.jpg">
+                    <img src="C:\Users\Tiona\Pictures\Exercice\photo4.jpg" alt="Sweety Candy" width="600" height="400">
+                    </a>
+                    <div class="desc">Sweety Candy</div>
+
+                <div class="clearfix"></div>
+                </div>
+            </div>
+    
+            <div><h2 id="Find us"><i class="far fa-star"></i> Find us</h2></div>
+            <div class="grid-container3">
+                <!--Import de la carte-->
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5352920118066!2d47.52404341469846!3d-18.907686212214095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e00bfe681a5%3A0x4c1b3b6f62c45fa2!2sAnalakely%20Market!5e0!3m2!1sfr!2smg!4v1644529705229!5m2!1sfr!2smg" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"</div>
+                <div><h3>Notre élevage de licornes est situé au :</h3>
+                <p>Analakely Market<br>
+                Arabe Rahezavana, Antananarivo, Madagascar<br>
+                01.22.45.67.90</p><br>
+                <h3>Newsletter</h3>
+                <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                <!--email et submit-->
+                <input type="email" placeholder="  votre@email.fr" required>
+                <div><input type="submit" value="Valider"></div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
